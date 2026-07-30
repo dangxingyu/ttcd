@@ -1,0 +1,28 @@
+{
+    "_comment": "Llama-3.2-1B transcribed for flame's FLA-Transformer model_type. Architectural fields match meta-llama/Llama-3.2-1B's config.json. We DROP the original rope_scaling type='llama3' (FLA Rotary doesn't yet implement llama3-style ramp) and use naked RoPE with rope_theta=500000 throughout positions 0-65535 — same approach ProLong takes when CT-ing Llama-3 models. The model will need to re-adapt its position handling during CT, but with 5.5B tokens this is empirically fine (ProLong precedent).",
+
+    "model_type": "transformer",
+    "hidden_size": 2048,
+    "num_hidden_layers": 16,
+    "num_heads": 32,
+    "num_kv_heads": 8,
+    "head_dim": 64,
+    "intermediate_size": 8192,
+    "vocab_size": 128256,
+    "max_position_embeddings": 65536,
+    "rope_theta": 500000.0,
+    "window_size": null,
+    "hidden_act": "swish",
+    "norm_eps": 1e-05,
+    "initializer_range": 0.02,
+    "tie_word_embeddings": true,
+    "qkv_bias": false,
+    "qk_norm": false,
+    "fuse_norm": true,
+    "fuse_swiglu": true,
+    "fuse_cross_entropy": false,
+    "fuse_linear_cross_entropy": true,
+    "use_cache": true,
+    "bos_token_id": 128000,
+    "eos_token_id": 128001
+}

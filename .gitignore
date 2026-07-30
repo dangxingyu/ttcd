@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+exp/
+logs/
+data/
+eval_results/
+eval_results_*/
+wandb/
+core.*
+slurm-*.out
+*.log
+.DS_Store
