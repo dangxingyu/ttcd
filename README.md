@@ -1,6 +1,6 @@
 # TTCD: Test-Time Training via Context Distillation
 
-Official implementation of **"Learning What to Remember: Test-Time Training via Context Distillation"**.
+Official implementation of **"Learning What to Remember: Test-Time Training via Context Distillation" (https://arxiv.org/abs/2608.01672)**.
 
 TTCD is a test-time training (TTT) framework that unifies past-context compression and online adaptation through a single context-distillation objective: a long-window **teacher** attention and a short-window **student** attention run over shared Q/K/V, and the hidden-state discrepancy between them is distilled into fast weights — a low-rank correction to the existing MLP down-projection (**IP-TTCD**, the in-place instantiation). The model learns *what to remember* from distant context instead of trying to store everything.
 
